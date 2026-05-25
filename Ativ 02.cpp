@@ -1,7 +1,7 @@
 2) Faça um programa que leia N números e informe o maior número.
 ___________________________________________________________________________________________
 R:
-#include < iostream>
+#include <iostream>
 using namespace std;
 
 int main(){
