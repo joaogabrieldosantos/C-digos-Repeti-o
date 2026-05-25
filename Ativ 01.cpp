@@ -2,7 +2,7 @@
 
 ___________________________________________________________________________________________
 R:
-#include < iostream>
+#include <iostream>
 using namespace std;
 
 void mussarela(int n){
