@@ -1,6 +1,4 @@
-9) Faça	um programa que peça uma única nota, entre zero e dez. 
-Caso o valor informado seja inválido, seu programa deve emitir
-uma mensagem de erro e solicitar novamente a nota até que o usuário informe uma 
+9) Faça	um programa que peça uma única nota, entre zero e dez. Caso o valor informado seja inválido, seu programa deve emitir uma mensagem de erro e solicitar novamente a nota até que o usuário informe uma 
 nota válida, entre zero e dez.
 _____________________________________________________________________________________________________________________
 	
