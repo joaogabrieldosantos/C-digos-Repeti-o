@@ -27,21 +27,28 @@ ________________________________________________________________________________
 #include <iostream>
 using namespace std;
 
-int main()
-{
+int main(){
+	
     string name;
+    
     int nota;
+    
     char let;
+    
     char gab[10] = {'A', 'B', 'C', 'D', 'E', 'E', 'D', 'C', 'B', 'A'};
 
     int continuar = 0;
+    
     float soma = 0;
+    
     float media = 0;
 
     int maior = 0;
+    
     int menor = 10;
 
     int totalAlunos = 0;
+    
     int notes[300];
 
     while(continuar == 0)
@@ -49,180 +56,226 @@ int main()
         nota = 0;
 
         cout << "Seu nome eh: ";
+        
         cin >> name;
 
         cout << "Aviso: as respostas so podem ser (A, B, C, D ou E)" << endl;
 
-        for(int i = 1; i <= 10; i++)
-        {
+        for(int i = 1; i <= 10; i++){
+        	
             cout << "Questao " << i << ": ";
+            
             cin >> let;
 
-            switch(i)
-            {
+            switch(i){
+            	
                 case 1:
-                    if(gab[0] == let)
-                    {
+                	
+                    if(gab[0] == let){
+                    	
                         cout << "Voce ACERTOU!!" << endl;
                         nota++;
+                        
+                    }else{
+                        
+						cout << "Voce ERROU!" << endl;
+						
                     }
-                    else
-                    {
-                        cout << "Voce ERROU!" << endl;
-                    }
+                    
                     cout << "Resposta correta: A" << endl;
                     break;
 
                 case 2:
-                    if(gab[1] == let)
-                    {
+                	
+                    if(gab[1] == let){
+                    	
                         cout << "Voce ACERTOU!!" << endl;
                         nota++;
-                    }
-                    else
-                    {
+                        
+                    }else{
+                    	
                         cout << "Voce ERROU!" << endl;
+                        
                     }
+                    
                     cout << "Resposta correta: B" << endl;
                     break;
 
                 case 3:
-                    if(gab[2] == let)
-                    {
+                	
+                    if(gab[2] == let){
+                    	
                         cout << "Voce ACERTOU!!" << endl;
                         nota++;
+                        
+                    }else{
+                       
+					    cout << "Voce ERROU!" << endl;
+					    
                     }
-                    else
-                    {
-                        cout << "Voce ERROU!" << endl;
-                    }
+                    
                     cout << "Resposta correta: C" << endl;
                     break;
 
                 case 4:
-                    if(gab[3] == let)
-                    {
+                	
+                    if(gab[3] == let){
+                    	
                         cout << "Voce ACERTOU!!" << endl;
                         nota++;
+                        
+                    }else{
+                        
+						cout << "Voce ERROU!" << endl;
+						
                     }
-                    else
-                    {
-                        cout << "Voce ERROU!" << endl;
-                    }
+                    
                     cout << "Resposta correta: D" << endl;
                     break;
 
                 case 5:
-                    if(gab[4] == let)
-                    {
+                	
+                    if(gab[4] == let){
+                    	
                         cout << "Voce ACERTOU!!" << endl;
                         nota++;
-                    }
-                    else
-                    {
+                        
+                    }else{
+                    	
                         cout << "Voce ERROU!" << endl;
+                        
                     }
+                    
                     cout << "Resposta correta: E" << endl;
                     break;
 
                 case 6:
-                    if(gab[5] == let)
-                    {
+                	
+                    if(gab[5] == let){
+                    	
                         cout << "Voce ACERTOU!!" << endl;
                         nota++;
-                    }
-                    else
-                    {
+                        
+                    }else{
+                    	
                         cout << "Voce ERROU!" << endl;
+                        
                     }
+                    
                     cout << "Resposta correta: E" << endl;
                     break;
 
                 case 7:
-                    if(gab[6] == let)
-                    {
+                	
+                    if(gab[6] == let){
+                    	
                         cout << "Voce ACERTOU!!" << endl;
                         nota++;
-                    }
-                    else
-                    {
+                        
+                    }else{
+                    	
                         cout << "Voce ERROU!" << endl;
+                        
                     }
+                    
                     cout << "Resposta correta: D" << endl;
+                    
                     break;
 
                 case 8:
-                    if(gab[7] == let)
-                    {
+                	
+                    if(gab[7] == let){
+                    	
                         cout << "Voce ACERTOU!!" << endl;
                         nota++;
-                    }
-                    else
-                    {
+                        
+                    }else{
+                    	
                         cout << "Voce ERROU!" << endl;
+                        
                     }
+                    
                     cout << "Resposta correta: C" << endl;
                     break;
 
                 case 9:
-                    if(gab[8] == let)
-                    {
+                	
+                    if(gab[8] == let){
+                    	
                         cout << "Voce ACERTOU!!" << endl;
                         nota++;
-                    }
-                    else
-                    {
+                        
+                    }else{
+                    	
                         cout << "Voce ERROU!" << endl;
+                        
                     }
+                    
                     cout << "Resposta correta: B" << endl;
+                
                     break;
 
                 case 10:
-                    if(gab[9] == let)
-                    {
+                	
+                    if(gab[9] == let){
+                    	
                         cout << "Voce ACERTOU!!" << endl;
+                        
                         nota++;
-                    }
-                    else
-                    {
+                        
+                    }else{
+                    	
                         cout << "Voce ERROU!" << endl;
+                        
                     }
+                    
                     cout << "Resposta correta: A" << endl;
                     break;
+                    
             }
         }
 
         cout << "Aluno: " << name << endl;
+        
         cout << "Nota: " << nota << endl;
 
         notes[totalAlunos] = nota;
 
         soma = soma + nota;
 
-        if(nota > maior)
-        {
+        if(nota > maior){
+        	
             maior = nota;
+            
         }
-
-        if(nota < menor)
-        {
+        
+        if(nota < menor){
+        	
             menor = nota;
+            
         }
 
         totalAlunos++;
 
         cout << "Deseja continuar?" << endl;
+        
         cout << "0 - Sim" << endl;
+        
         cout << "1 - Nao" << endl;
+        
         cin >> continuar;
     }
 
     media = soma / totalAlunos;
 
     cout << "---------- RESULTADO FINAL ----------" << endl;
+    
     cout << "Maior acerto: " << maior << endl;
+    
     cout << "Menor acerto: " << menor << endl;
+    
     cout << "Total de alunos: " << totalAlunos << endl;
+    
     cout << "Media da turma: " << media << endl;
 
     cout << "Notas dos alunos:" << endl;
