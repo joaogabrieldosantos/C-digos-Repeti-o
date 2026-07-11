@@ -129,5 +129,35 @@ int main(){
     return 0;
 }
 //____________________________________________________________________________________________________________________________
+//Faça uma função que receba um número e imprima a tabuada desse número de 1 até 10.
+//--------------------------------------------------------------------------------------------------------------------
 
+#include <iostream>
+using namespace std;
 
+void tab (int num){
+	int i = 1;
+	int mult;
+	
+	cout << "Me de o numero da tabuada que sera utilizado: ";
+	cin >> num;
+	
+	while (i <= 10){
+		
+		mult = num * i;
+		cout << num << " X " << i << " = " << mult << endl;
+		
+		i++;
+		
+	}
+	
+}
+
+int main(){
+	int n;
+	
+	tab(n);
+	
+	return 0;
+}
+//____________________________________________________________________________________________________________________________
