@@ -38,3 +38,34 @@ int main(){
     
 	return 0;
 }
+//____________________________________________________________________________________________________________________________
+
+//Crie um programa que peça ao usuário um número N e faça uma contagem regressiva de N até 0, imprimindo cada número.
+//--------------------------------------------------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+
+void regre(int num){
+	
+	cout << "quais numeros serao utilizados: ";
+		cin >> num;
+		
+	while(num >= 1){
+		
+		cout << num << endl;
+		num = num - 1;
+		
+	}
+	
+}
+
+
+int main(){
+	int n;
+	
+	regre(n);
+	cout << "ZERO!! Iniciar/explodir/sla oq!!" << endl;
+	
+	return 0;
+}
