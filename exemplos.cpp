@@ -69,3 +69,65 @@ int main(){
 	
 	return 0;
 }
+//____________________________________________________________________________________________________________________________
+//Crie um programa que peça ao usuário um número N e faça a impressão apenas dos números pares de 0 até N,
+//imprimindo cada número.
+//--------------------------------------------------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+
+void par (int num){
+	int i = 0;
+
+	cout << "Ate que numero sera a verificacao? Ate o numero ";
+		cin >> num;
+		
+	while(i <= num){
+	
+		cout << i << endl;
+		
+		i += 2;
+		
+	}
+}
+
+int main(){
+	int n;
+	
+	par(n);
+}
+//--------------------------------------------------------------------------------------------------------------------
+//se seguir a dica dada o exercicio sera feito desta forma, mas o de cima foi o primeiro jeito que pensei.
+
+#include <iostream>
+using namespace std;
+
+void par(int num){
+
+    cout << "Ate que numero sera a verificacao? ";
+    cin >> num;
+
+    int i = num;
+
+    while(i >= 0){
+
+        if(i % 2 == 0){
+            cout << i << endl;
+        }
+
+        i--;
+    }
+}
+
+int main(){
+
+    int n;
+
+    par(n);
+
+    return 0;
+}
+//____________________________________________________________________________________________________________________________
+
+
